@@ -183,9 +183,9 @@ function App() {
           aplicados en su quehacer como futuro docentes
 
         </p>
-      <h2 className="title">
+      <div className="video-container">
         <ReactPlayer url={Video} controls />
-      </h2>
+      </div>
 
       </div>
 

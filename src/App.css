@@ -27,3 +27,19 @@
   padding: 20px;
   border-radius: 8px;
 }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Proporción de aspecto 16:9 para un video */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container video,
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
