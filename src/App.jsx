@@ -4,7 +4,7 @@ import universidadImage from './assets/unad.png';
 import { Container, Typography, Grid} from '@mui/material';
 import ReactPlayer from 'react-player';
 import './App.css';
-
+import Video from "./assets/presentacion.mp4";
 
 function App() {
   return (
@@ -184,7 +184,7 @@ function App() {
 
         </p>
       <h2 className="title">
-        <ReactPlayer url="https://unadvirtualedu-my.sharepoint.com/:v:/g/personal/giovanna_garcia_unad_edu_co/EaI8PUIJ6KZHrbBslbid7okB0N4d26CT8vb7z1XaCaeUeg " controls />
+        <ReactPlayer url={Video} controls />
       </h2>
 
       </div>
