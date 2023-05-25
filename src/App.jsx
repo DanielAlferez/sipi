@@ -9,7 +9,9 @@ import Video from "./assets/presentacion.mp4";
 function App() {
   return (
     <Container maxWidth="md">
-      <Typography variant="h3" className="title">Semillero de Investigación Sipi</Typography>
+      <br />
+      <Typography variant="h4" className="title">Semillero de Investigación Sipi</Typography>
+      <br /><br />
       <Grid container spacing={2}>
         <Grid item xs={12} sm={6}>
           <div className="imageContainer">
@@ -21,8 +23,17 @@ function App() {
             <img src={universidadImage} alt="Universidad" />
           </div>
         </Grid>
+        <Grid>
+
+        </Grid>
       </Grid>
       <div className="content">
+        <h2 className="title">Invitación al Semillero</h2>
+        <div className="video-container">
+            <ReactPlayer url={Video} controls />
+        </div>
+        <p className='url'>Link: https://acortar.link/uT0yBi</p>
+
         <h2 className="title">¿Cuéntanos un poquito de tu experiencia docente en la UNAD?</h2>
         <p>
           La Licenciatura en Pedagogía Infantil inicia desde el año 2015 con registro calificado. La Misión de la Licenciatura de acuerdo con el Proyecto Educativo del Programa (PEP) es formar líderes profesionales en la educación de las infancias, con alto desempeño investigativo, pedagógico, didáctico y con competencias capaces de abordar a las infancias desde una perspectiva de educación inclusiva, haciendo uso de las TIC, como elemento pedagógico y didáctico en procesos educativos a favor la educación integral de las infancias.
@@ -175,17 +186,17 @@ function App() {
           Infantil que hagan parte de este Semillero SIPI.
 
         </p>
-        <h2 className="title">MISION</h2>
-        <p>
-          Generar espacios académicos de investigación a través de trabajo en red, 
-          entre estudiantes, docentes y comunidad educativa, con el propósito de obtener 
-          nuevos aprendizajes a través de la ejecución de proyectos de investigación para ser 
-          aplicados en su quehacer como futuro docentes
+        <div className='mission'>
+          <h2 className="title">MISION</h2>
+          <p>
+            Generar espacios académicos de investigación a través de trabajo en red, 
+            entre estudiantes, docentes y comunidad educativa, con el propósito de obtener 
+            nuevos aprendizajes a través de la ejecución de proyectos de investigación para ser 
+            aplicados en su quehacer como futuro docentes
 
-        </p>
-      <div className="video-container">
-        <ReactPlayer url={Video} controls />
-      </div>
+          </p>
+        </div>
+
 
       </div>
 
