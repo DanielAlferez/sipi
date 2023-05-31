@@ -5,6 +5,8 @@ import { Container, Typography, Grid} from '@mui/material';
 import ReactPlayer from 'react-player';
 import './App.css';
 import Video from "./assets/presentacion.mp4";
+import Part from "./assets/Integrantes.jpg"
+import Exp from "./assets/Explicacion.mp4";
 
 function App() {
   return (
@@ -23,22 +25,22 @@ function App() {
             <img src={universidadImage} alt="Universidad" />
           </div>
         </Grid>
-        <Grid>
-
-        </Grid>
       </Grid>
       <div className="content">
+
+
+
         <h2 className="title">Invitación al Semillero</h2>
         <div className="video-container">
             <ReactPlayer url={Video} controls />
         </div>
         <p className='url'>Link: https://acortar.link/uT0yBi</p>
 
-        <h2 className="title">¿Cuéntanos un poquito de tu experiencia docente en la UNAD?</h2>
+        <h2 className="title">Cuéntanos un poquito de tu experiencia docente en la UNAD</h2>
         <p>
           La Licenciatura en Pedagogía Infantil inicia desde el año 2015 con registro calificado. La Misión de la Licenciatura de acuerdo con el Proyecto Educativo del Programa (PEP) es formar líderes profesionales en la educación de las infancias, con alto desempeño investigativo, pedagógico, didáctico y con competencias capaces de abordar a las infancias desde una perspectiva de educación inclusiva, haciendo uso de las TIC, como elemento pedagógico y didáctico en procesos educativos a favor la educación integral de las infancias.
         </p>
-        <h2 className="title">¿Háblanos del semillero SIPI?</h2>
+        <h2 className="title">Háblanos del semillero SIPI</h2>
         <p>
           De acuerdo a lo anterior a finales del año 2019 en el CEAD Acacias surge el 
           semillero Investigación de Pedagogía Infantil con los primeros estudiantes que 
@@ -66,13 +68,21 @@ function App() {
           Educación y Diversidad, Liderado por la Licenciada Carmen Eugenia Pedraza, Este 
           Grupo categorizado en C.
         </p>
+        <div className="video-container">
+            <ReactPlayer url='https://www.youtube.com/watch?v=kiMPfeiDmjE' controls />
+        </div>
+        <br />
+        <div className="video-container">
+            <ReactPlayer url={Exp} controls />
+        </div>
+        <br />
         <h2 className="title">¿Cómo pertenecer a el semillero SIPI?</h2>
         <p>
           Lo invito a que se acerque al CEAD Acacias y dialogue con los Docentes de La 
           Licenciatura En Pedagogía Infantil para brindarle orientación 
         </p>
-        <h2 className="title">¿Comprendo que algunos estudiantes que están iniciando su carrera 
-            profesional se preguntaran que Significa Semillero de Investigación?</h2>
+        <h2 className="title">Comprendo que algunos estudiantes que están iniciando su carrera 
+            profesional se preguntaran ¿Qué Significa Semillero de Investigación?</h2>
         <p>
           Los semilleros de investigación de la UNAD son comunidades de aprendizaje de 
           estudiantes y docentes, de una o diferentes áreas, surgidas en el seno de la 
@@ -195,6 +205,11 @@ function App() {
             aplicados en su quehacer como futuro docentes
 
           </p>
+        </div>
+        
+        <div>
+          <h2 className="title">nosotros</h2>
+          <img className='image-container' src={Part} alt="" />
         </div>
 
 
